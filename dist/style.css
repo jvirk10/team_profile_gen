@@ -1,0 +1,13 @@
+main {
+    margin: 15 px;
+    padding-top: 200 px;
+}
+
+.card {
+    padding: 10 px;
+    margin: 15 px;
+}
+
+.card-body {
+    color: white;
+}
