@@ -39,8 +39,8 @@ const promptUser = () => {
             type: "input",
             name: "empEmail",
             message: "Enter the manger employee email address ",
-            validate: empEmailInput => {
-                if (empEmailInput) {
+            validate: answers => {
+                if (answers) {
                     return true;
                 } else {
                     console.log('Please enter the manager employee email address');
@@ -107,8 +107,8 @@ const addMember = (memberInfo) => {
             type: "input",
             name: "memberEmail",
             message: `Enter the ${memberInfo} member email `,
-            validate: memberEmailInput => {
-                if (memberEmailInput) {
+            validate: answer => {
+                if (answer) {
                     return true;
                 } else {
                     console.log(`Please enter the ${memberInfo} member email`);
